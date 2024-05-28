@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ImagesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Background Image"
+            android:background="@color/purple_200"
+            android:src="@drawable/background_img"/>
+
+        <VideoView
+            android:id="@+id/videoViewLocal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/purple_700"/>
+
+        <VideoView
+            android:id="@+id/videoViewWeb"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@color/purple_700"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="5dp"
+            app:shapeAppearanceOverlay="@style/circular"
+            android:contentDescription="Background Image 2"
+            android:src="@drawable/kitty"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="5dp"
+            app:shapeAppearanceOverlay="@style/cornerCut"
+            android:contentDescription="Background Image 2"
+            android:src="@drawable/kitty"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="5dp"
+            app:shapeAppearanceOverlay="@style/cornerCutPartial"
+            android:contentDescription="Background Image 2"
+            android:src="@drawable/kitty"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:strokeColor="@color/purple_200"
+            app:strokeWidth="5dp"
+            app:shapeAppearanceOverlay="@style/cornerRoundedPartial"
+            android:contentDescription="Background Image 2"
+            android:src="@drawable/kitty"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp">
+
+        <Button
+            android:id="@+id/btn_components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openComponents"
+            android:text="Componentes"/>
+
+        <Button
+            android:id="@+id/btn_external_components"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openExternalComponents"
+            android:text="External Componentes"/>
+
+        <Button
+            android:id="@+id/btn_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openWebView"
+            android:text="Webview"/>
+
+        <Button
+            android:id="@+id/btn_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openImagesView"
+            android:text="Images"/>
+
+        <Button
+            android:id="@+id/btn_search_component"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openSearchComponent"
+            android:text="SearchView"/>
+
+        <Button
+            android:id="@+id/btn_group_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openGroupViews"
+            android:text="Group Views"/>
+
+    </LinearLayout>
+
+</LinearLayout>

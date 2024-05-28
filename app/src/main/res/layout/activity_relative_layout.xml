@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <View
+        android:id="@+id/vA"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/purple_200"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/vB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_500"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:id="@+id/vC"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:layout_above="@id/vA"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/vD"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:layout_below="@id/vA"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/vE"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:layout_toStartOf="@id/vA"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/vF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:layout_toEndOf="@id/vA"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/vC"
+        android:layout_alignTop="@id/vC"
+        android:background="@color/purple_200"/>
+
+    <!-- Los scale no modifican el area general de creacipn (solo mueve el visual) -->
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        android:translationZ="1dp"
+        android:scaleX="2"
+        android:scaleY="2"/>
+
+    <!-- Los transition no modifican el area general de creacipn (solo mueve el visual) -->
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/purple_200"
+        android:translationX="5dp"
+        android:translationY="5dp"/>
+
+</RelativeLayout>
